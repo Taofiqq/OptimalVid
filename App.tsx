@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -80,6 +81,8 @@ function App(): React.JSX.Element {
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
+          <Ionicons name="bag" size={30} color="#000" />
+          <Text style={styles.ojuju}>Hello Ojuju</Text>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
@@ -112,6 +115,10 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  ojuju: {
+    fontFamily: 'Lato-Italic',
+    fontSize: 32,
   },
 });
 
