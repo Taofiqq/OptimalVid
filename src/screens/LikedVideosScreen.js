@@ -3,9 +3,11 @@ import {View, FlatList, StyleSheet, Text} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import VideoCard from '../components/VideoCard';
 import videoData from '../../assets/data/data.json';
+import {useNavigation} from '@react-navigation/native';
 
 const LikedVideosScreen = () => {
   const [likedVideos, setLikedVideos] = useState([]);
+  const navigation = useNavigation();
 
   useEffect(() => {
     const fetchLikedVideos = async () => {
@@ -27,6 +29,10 @@ const LikedVideosScreen = () => {
     fetchLikedVideos();
   }, []);
 
+  const handleNavigateToVideoPlayer = video => {
+    navigation.navigate('VideoPlayer', {video});
+  };
+
   return (
     <View style={styles.container}>
       {likedVideos.length === 0 ? (
@@ -42,6 +48,7 @@ const LikedVideosScreen = () => {
               thumbnail={item.thumbnail}
               liked={item.liked}
               onLike={() => null}
+              onPress={() => handleNavigateToVideoPlayer(item)}
             />
           )}
         />
