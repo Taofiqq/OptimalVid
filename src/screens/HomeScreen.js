@@ -1,25 +1,67 @@
-import React, {useState} from 'react';
-import {View, Text, FlatList, StyleSheet} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {View, FlatList, StyleSheet} from 'react-native';
 import videoData from '../../assets/data/data.json';
 import VideoCard from '../components/VideoCard';
 import {useNavigation} from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const HomeScreen = () => {
   const [videos, setVideos] = useState(videoData);
   const navigation = useNavigation();
-  const handleLike = id => {
-    const updatedVideos = videos.map(video => {
-      if (video.id === id) {
-        return {...video, liked: !video.liked};
+
+  useEffect(() => {
+    const fetchLikedVideos = async () => {
+      try {
+        const likedVideoIds =
+          JSON.parse(await AsyncStorage.getItem('likedVideos')) || [];
+        const updatedVideos = videoData.map(video => ({
+          ...video,
+          liked: likedVideoIds.includes(video.id),
+        }));
+        setVideos(updatedVideos);
+      } catch (error) {
+        console.error('Failed to load liked videos:', error);
       }
-      return video;
-    });
-    setVideos(updatedVideos);
+    };
+
+    fetchLikedVideos();
+  }, []);
+
+  const handleLike = async id => {
+    try {
+      const updatedVideos = videos.map(video => {
+        if (video.id === id) {
+          return {...video, liked: !video.liked};
+        }
+        return video;
+      });
+
+      setVideos(updatedVideos);
+
+      const likedVideoIds = updatedVideos
+        .filter(video => video.liked)
+        .map(video => video.id);
+
+      await AsyncStorage.setItem('likedVideos', JSON.stringify(likedVideoIds));
+    } catch (error) {
+      console.error('Failed to save liked videos:', error);
+    }
   };
 
   const handleNavigateToVideoPlayer = video => {
     navigation.navigate('VideoPlayer', {video});
   };
+
+  const logLikedVideos = async () => {
+    try {
+      const likedVideos = await AsyncStorage.getItem('likedVideos');
+      console.log('Liked Videos in AsyncStorage:', JSON.parse(likedVideos));
+    } catch (error) {
+      console.error('Failed to retrieve liked videos:', error);
+    }
+  };
+
+  logLikedVideos();
 
   return (
     <View style={styles.container}>

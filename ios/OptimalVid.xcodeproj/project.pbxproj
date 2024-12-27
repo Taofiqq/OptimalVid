@@ -15,16 +15,16 @@
 		1C38962D37644679BC26537F /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1BB484BD394F2493C88AF8 /* Lato-Thin.ttf */; };
 		1F4CBE47741442D4B7BBB3EF /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1A626BEADF48D581213D91 /* Lato-Light.ttf */; };
 		24A9E259127D4E96AF2F4D84 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26E08FEFA3C24FC79BA99CF4 /* Lato-BlackItalic.ttf */; };
-		4D3451655B6299D44EBD77FC /* libPods-OptimalVid-OptimalVidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8F6179AB6883B35A39A91B /* libPods-OptimalVid-OptimalVidTests.a */; };
 		7CB507E502FD4A4A86F13AF1 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42B1E306920E4582900C76E3 /* Lato-BoldItalic.ttf */; };
 		7F7A8FFCA08C470CBF7819D0 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87E485101F8240B2B0772BA0 /* Lato-ThinItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A32E154F979748CFAE3255F2 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614E38CFB47B49F785D86EDF /* Lato-LightItalic.ttf */; };
 		AC154493475E4B8FA08BDCC9 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C50D5AA9FEF4D23993B3098 /* Lato-Regular.ttf */; };
-		B1952A3069E6E2398E533D72 /* libPods-OptimalVid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F54A32DE8AD773881EEDAD /* libPods-OptimalVid.a */; };
 		B8882B238E09CAA38B2A8761 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		BB6A92DE4B5B88A0AD6E82E0 /* libPods-OptimalVid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9130693355FAFB8541BB9E /* libPods-OptimalVid.a */; };
 		C6F3E857576D4A80A91C67ED /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B8B5871941BA82BE5312 /* Lato-Italic.ttf */; };
 		D9ADBBB55A854EA4AC25FD9D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66916ACA7C5A403C82396A8A /* Lato-Black.ttf */; };
+		E7E247C44AFA8B161B8FC798 /* libPods-OptimalVid-OptimalVidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9125349720A3A8C3FDFCF1C /* libPods-OptimalVid-OptimalVidTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		00E356EE1AD99517003FC87E /* OptimalVidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptimalVidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OptimalVidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptimalVidTests.m; sourceTree = "<group>"; };
-		0E06CE56837F31A705BA2E2B /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid-OptimalVidTests.release.xcconfig"; path = "Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests.release.xcconfig"; sourceTree = "<group>"; };
+		03BB9955B950251CC3EF380A /* Pods-OptimalVid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid.debug.xcconfig"; path = "Target Support Files/Pods-OptimalVid/Pods-OptimalVid.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* OptimalVid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptimalVid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OptimalVid/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = OptimalVid/AppDelegate.mm; sourceTree = "<group>"; };
@@ -56,16 +56,16 @@
 		614E38CFB47B49F785D86EDF /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		66916ACA7C5A403C82396A8A /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
 		6B1A626BEADF48D581213D91 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		7C8F70BD1755CD874EE8A34E /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid-OptimalVidTests.debug.xcconfig"; path = "Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OptimalVid/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E485101F8240B2B0772BA0 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-ThinItalic.ttf"; path = "../assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		8C29B8B5871941BA82BE5312 /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		8F9130693355FAFB8541BB9E /* libPods-OptimalVid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OptimalVid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A1203D3FAB87899A7E6764 /* Pods-OptimalVid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid.release.xcconfig"; path = "Target Support Files/Pods-OptimalVid/Pods-OptimalVid.release.xcconfig"; sourceTree = "<group>"; };
+		C6CF714C949355846D365919 /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid-OptimalVidTests.release.xcconfig"; path = "Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA1BB484BD394F2493C88AF8 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
-		DA8F6179AB6883B35A39A91B /* libPods-OptimalVid-OptimalVidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OptimalVid-OptimalVidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBD8A79D0FDF84428B6AF53 /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid-OptimalVidTests.debug.xcconfig"; path = "Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DFBDFD16FA9DB19A36AECC50 /* Pods-OptimalVid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid.release.xcconfig"; path = "Target Support Files/Pods-OptimalVid/Pods-OptimalVid.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F2F54A32DE8AD773881EEDAD /* libPods-OptimalVid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OptimalVid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3F2D7C10AC16D1515E07719 /* Pods-OptimalVid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptimalVid.debug.xcconfig"; path = "Target Support Files/Pods-OptimalVid/Pods-OptimalVid.debug.xcconfig"; sourceTree = "<group>"; };
+		F9125349720A3A8C3FDFCF1C /* libPods-OptimalVid-OptimalVidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OptimalVid-OptimalVidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3451655B6299D44EBD77FC /* libPods-OptimalVid-OptimalVidTests.a in Frameworks */,
+				E7E247C44AFA8B161B8FC798 /* libPods-OptimalVid-OptimalVidTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1952A3069E6E2398E533D72 /* libPods-OptimalVid.a in Frameworks */,
+				BB6A92DE4B5B88A0AD6E82E0 /* libPods-OptimalVid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				F2F54A32DE8AD773881EEDAD /* libPods-OptimalVid.a */,
-				DA8F6179AB6883B35A39A91B /* libPods-OptimalVid-OptimalVidTests.a */,
+				8F9130693355FAFB8541BB9E /* libPods-OptimalVid.a */,
+				F9125349720A3A8C3FDFCF1C /* libPods-OptimalVid-OptimalVidTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,10 +182,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3F2D7C10AC16D1515E07719 /* Pods-OptimalVid.debug.xcconfig */,
-				DFBDFD16FA9DB19A36AECC50 /* Pods-OptimalVid.release.xcconfig */,
-				DEBD8A79D0FDF84428B6AF53 /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */,
-				0E06CE56837F31A705BA2E2B /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */,
+				03BB9955B950251CC3EF380A /* Pods-OptimalVid.debug.xcconfig */,
+				B8A1203D3FAB87899A7E6764 /* Pods-OptimalVid.release.xcconfig */,
+				7C8F70BD1755CD874EE8A34E /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */,
+				C6CF714C949355846D365919 /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,12 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OptimalVidTests" */;
 			buildPhases = (
-				D58881F26A98C75C00E101B6 /* [CP] Check Pods Manifest.lock */,
+				F07B327C028D91D75BB32521 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7163BB85716CA37610019AB1 /* [CP] Embed Pods Frameworks */,
-				EF043B048B6BC7A45FDB1090 /* [CP] Copy Pods Resources */,
+				95EF1087D17C6CEB2545F270 /* [CP] Embed Pods Frameworks */,
+				80066D71C8CF208098B55C45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,13 +218,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OptimalVid" */;
 			buildPhases = (
-				E1AB0D64D9DF0CF0DE4A7132 /* [CP] Check Pods Manifest.lock */,
+				E9753161312933237B24DA68 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5A8DB64CB315447F26DD1219 /* [CP] Embed Pods Frameworks */,
-				96ECAEE0AFEFE996FE3D1B09 /* [CP] Copy Pods Resources */,
+				3BC67FE6E51E59BD902EB9C6 /* [CP] Embed Pods Frameworks */,
+				E5ABBFE6AF5261028D8BB993 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,7 +318,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		5A8DB64CB315447F26DD1219 /* [CP] Embed Pods Frameworks */ = {
+		3BC67FE6E51E59BD902EB9C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,7 +335,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptimalVid/Pods-OptimalVid-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7163BB85716CA37610019AB1 /* [CP] Embed Pods Frameworks */ = {
+		80066D71C8CF208098B55C45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95EF1087D17C6CEB2545F270 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +369,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96ECAEE0AFEFE996FE3D1B09 /* [CP] Copy Pods Resources */ = {
+		E5ABBFE6AF5261028D8BB993 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,29 +386,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptimalVid/Pods-OptimalVid-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D58881F26A98C75C00E101B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OptimalVid-OptimalVidTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1AB0D64D9DF0CF0DE4A7132 /* [CP] Check Pods Manifest.lock */ = {
+		E9753161312933237B24DA68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,21 +408,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF043B048B6BC7A45FDB1090 /* [CP] Copy Pods Resources */ = {
+		F07B327C028D91D75BB32521 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OptimalVid-OptimalVidTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptimalVid-OptimalVidTests/Pods-OptimalVid-OptimalVidTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -463,7 +463,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEBD8A79D0FDF84428B6AF53 /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */;
+			baseConfigurationReference = 7C8F70BD1755CD874EE8A34E /* Pods-OptimalVid-OptimalVidTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -490,7 +490,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E06CE56837F31A705BA2E2B /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */;
+			baseConfigurationReference = C6CF714C949355846D365919 /* Pods-OptimalVid-OptimalVidTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -514,7 +514,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3F2D7C10AC16D1515E07719 /* Pods-OptimalVid.debug.xcconfig */;
+			baseConfigurationReference = 03BB9955B950251CC3EF380A /* Pods-OptimalVid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -542,7 +542,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFBDFD16FA9DB19A36AECC50 /* Pods-OptimalVid.release.xcconfig */;
+			baseConfigurationReference = B8A1203D3FAB87899A7E6764 /* Pods-OptimalVid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

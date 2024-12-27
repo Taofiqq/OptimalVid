@@ -1,10 +1,51 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {View, FlatList, StyleSheet, Text} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import VideoCard from '../components/VideoCard';
+import videoData from '../../assets/data/data.json';
 
 const LikedVideosScreen = () => {
+  const [likedVideos, setLikedVideos] = useState([]);
+
+  useEffect(() => {
+    const fetchLikedVideos = async () => {
+      try {
+        const likedVideoIds =
+          JSON.parse(await AsyncStorage.getItem('likedVideos')) || [];
+        const liked = videoData
+          .map(video => ({
+            ...video,
+            liked: likedVideoIds.includes(video.id),
+          }))
+          .filter(video => likedVideoIds.includes(video.id));
+        setLikedVideos(liked);
+      } catch (error) {
+        console.error('Failed to load liked videos:', error);
+      }
+    };
+
+    fetchLikedVideos();
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Here Are Your Liked Videos!</Text>
+      {likedVideos.length === 0 ? (
+        <Text style={styles.emptyText}>You haven't liked any videos yet!</Text>
+      ) : (
+        <FlatList
+          data={likedVideos}
+          keyExtractor={item => item.id.toString()}
+          renderItem={({item}) => (
+            <VideoCard
+              title={item.title}
+              description={item.description}
+              thumbnail={item.thumbnail}
+              liked={item.liked}
+              onLike={() => null}
+            />
+          )}
+        />
+      )}
     </View>
   );
 };
@@ -12,13 +53,14 @@ const LikedVideosScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#fff',
+    padding: 10,
   },
-  text: {
-    fontSize: 18,
-    fontWeight: 'bold',
+  emptyText: {
+    fontSize: 16,
+    color: 'gray',
+    textAlign: 'center',
+    marginTop: 20,
   },
 });
 

@@ -25,7 +25,6 @@ const renderTabBarIcon = (route, focused, color, size) => {
 
 const BottomTabNavigator = () => {
   return (
-    // <NavigationContainer>
     <Tab.Navigator
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, color, size}) =>
@@ -41,9 +40,14 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen name="Search" component={SearchScreen} />
-      <Tab.Screen name="Liked" component={LikedVideosScreen} />
+      <Tab.Screen
+        name="Liked"
+        options={{
+          headerTitle: 'Liked Videos',
+        }}
+        component={LikedVideosScreen}
+      />
     </Tab.Navigator>
-    // </NavigationContainer>
   );
 };
 

@@ -10,13 +10,11 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* Define the BottomTabNavigator as the main screen */}
         <Stack.Screen
           name="Back"
           component={BottomTabNavigator}
-          options={{headerShown: false}} // Hide the header for the tab navigator
+          options={{headerShown: false}}
         />
-        {/* Define the VideoPlayerScreen */}
         <Stack.Screen
           name="VideoPlayer"
           component={VideoPlayerScreen}
