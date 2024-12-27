@@ -4,7 +4,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 Watch the demo of the app in action:
 
-[![OptimalVid Demo](https://drive.google.com/file/d/1v7_lbHkirRE8MuGAx_MBiga1hZLAxmga/view?usp=sharing)]
+[App Demo](https://drive.google.com/file/d/1v7_lbHkirRE8MuGAx_MBiga1hZLAxmga/view)
 
 # Getting Started
 
