@@ -4,6 +4,100 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
+## Project Overview
+
+OptimalVid is a cross-platform mobile video streaming application built with React Native. The app enables users to:
+
+- Browse a list of available videos.
+
+- Search for specific videos by title.
+
+- "Like" videos and view their liked videos in a separate tab.
+
+- Play videos dynamically, with the ability to download one video for offline playback.
+
+## Features
+
+- Home Screen: Browse a list of videos with their thumbnails and descriptions.
+
+- Search Functionality: Filter videos dynamically by entering search queries.
+
+- Liked Videos: "Like" videos and save them persistently to AsyncStorage.
+
+- Video Playback: Dynamically play videos with React Native Video Controls.
+
+- Offline Playback: Download a video locally for offline viewing.
+
+## Architecture
+
+### Folder Structure
+
+```
+├── assets/                     # Static assets such as fonts and icons and json data
+├── components/                 # Reusable UI components
+│   ├── VideoCard.js
+├── navigation/                 # Navigation setup
+│   ├── AppNavigator.js
+│   ├── BottomTabNavigator.js
+├── screens/                    # Individual screens
+│   ├── HomeScreen.js
+│   ├── LikedVideosScreen.js
+│   ├── SearchScreen.js
+│   ├── VideoPlayerScreen.js
+├── node_modules/               # Node dependencies
+├── ios/                        # iOS-specific files and configurations
+├── android/                    # Android-specific files and configurations
+├── App.js                      # App entry point
+├── package.json                # Project dependencies and scripts
+└── README.md                   # Project documentation
+```
+
+## Key Libraries and Dependencies
+
+- React Native Navigation: For managing navigation between screens.
+
+- AsyncStorage: For persisting liked videos locally.
+
+- React Native Video: For video playback.
+
+- React Native Video Controls: To add customizable playback controls.
+
+- React Native FS: For downloading videos locally
+
+### Core Screens
+
+1. `HomeScreen`:
+
+- Displays a list of videos with options to "like" and navigate to the video player.
+
+- Integrates AsyncStorage to persist liked videos.
+
+2. `LikedVideosScreen`:
+
+- Displays videos marked as liked by the user.
+
+- Fetches liked video details from AsyncStorage.
+
+3. `SearchScreen`:
+
+- Allows dynamic searching of videos by title.
+
+- Displays filtered results in real-time.
+
+## Best Practices Followed
+
+1. Separation of Concerns:
+
+- Organized the project into dedicated folders for components, screens, and navigation.
+
+2. Reusability:
+
+- Created reusable components (e.g., VideoCard) for consistency and modularity.
+
+3. Persistent Storage:
+
+- Used AsyncStorage to ensure liked videos persist across app
+
 ##  Setup Instructions for OptimalVid
 
 Follow these steps to set up and run the OptimalVid project locally:
